@@ -21,8 +21,6 @@ public class LoginViaHomePageTest {
     @Before
     public void pageLaunchSettings() {
         ChromeOptions options = new ChromeOptions();
-//        options.addArguments("--no-sandbox", "--disable-dev-shm-usage");
-//        driver = new ChromeDriver(options);
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver/chromedriver.exe");
         options.setBinary("C:/Users/User/AppData/Local/Yandex/YandexBrowser/Application/browser.exe");
         driver = new ChromeDriver(options);
